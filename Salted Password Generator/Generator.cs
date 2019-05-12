@@ -54,7 +54,7 @@ namespace Salted_Password_Generator
             Console.Write("Enter the amount of bytes to use for the password (Default is 24): ");
             string inputtedPasswordByteCount = Console.ReadLine();
             if (string.IsNullOrEmpty(inputtedPasswordByteCount)) return;
-            if (!int.TryParse(inputtedPasswordByteCount, out passwordByteCount) && inputtedPasswordByteCount != "")
+            if (!int.TryParse(inputtedPasswordByteCount, out passwordByteCount))
             {
                 Console.Write("Invalid input You need to type a number! Press any key to try again.");
                 Console.ReadKey();
